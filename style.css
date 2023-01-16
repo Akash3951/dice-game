@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.5rem;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 70vw;
+  border-radius: 13px;
+  overflow: hidden;
+  /* box-sizing: border-box; */
+}
+
+.playerBox {
+  height: 100%;
+  width: 55%;
+  background-color: #9b6983;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.player--active {
+  background-color: rgb(216, 187, 203);
+}
+
+.playerName {
+  margin-bottom: 15px;
+}
+
+.current {
+  background-color: #c7365f;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+.currentLabel {
+  margin-bottom: 15px;
+}
+
+.score {
+  font-size: 5rem;
+  color: #c7365f;
+}
+
+.currentScore {
+  font-size: 2rem;
+}
+.btn {
+  position: absolute;
+  padding: 10px 25px;
+  border-radius: 50rem;
+  border: 0px solid white;
+  font-size: 1.2rem;
+  color: #444;
+  cursor: pointer;
+}
+
+.btn--new {
+  top: 11vh;
+}
+
+.btn--roll {
+  bottom: 30vh;
+}
+
+.btn--hold {
+  bottom: 20vh;
+}
+
+.dice {
+  position: absolute;
+  top: 30%;
+  height: 6rem;
+  width: 6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
