@@ -19,7 +19,6 @@ const dice = document.querySelector('.dice');
 const newBtn = document.querySelector('.btn--new');
 const rollBtn = document.querySelector('.btn--roll');
 const holdBtn = document.querySelector('.btn--hold');
-console.log('hello');
 
 let active, score, currentscore, playing;
 
@@ -82,7 +81,7 @@ holdBtn.addEventListener('click', function () {
     document.getElementById(`score--${active}`).textContent = score[active];
 
     //check if the total score is greater than or equal to hundred
-    if (score[active] >= 50) {
+    if (score[active] >= 20) {
       //finish the game
       playing = false;
       dice.classList.add('hidden');
